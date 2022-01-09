@@ -1,4 +1,4 @@
-import user from "./data/Daniel_2022.jpeg";
+import user from "./data/Daniel_2022.jpg";
 
 const Intro = () => {
     return (
