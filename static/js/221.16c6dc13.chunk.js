@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkopen94006_github_io=self.webpackChunkopen94006_github_io||[]).push([[221],{221:function(e,i,p){e.exports=p.p+"static/media/Daniel_2021.4b3209817b07c21262af.jpeg"}}]);
