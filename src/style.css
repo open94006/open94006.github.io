@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/earlyaccess/notosanstc.css');
+*
+{
+    font-family: "Noto Sans TC", sans-serif;
+}
+body
+{
+    margin-left: 18%;
+    margin-right: 18%;
+    margin-top: 100px;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #fff9f9
+}
+table,
+tr,
+td,
+th {
+  border: 1px solid #555;
+}
+blockquote
+{
+    padding: 0 1em;
+    color: #6a737d;
+    border-left: 0.25em solid #dfe2e5;
+}
+pre
+{
+    padding: 1em 1em;
+    margin: 1em 0;
+    font-size: 100%;
+    background-color: gainsboro;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+code
+{
+    font-size: 90%;
+    background-color: gainsboro;
+    border-radius: 10px;
+}
+.cardbox img {
+    max-width: 100%;
+}
+.App-link
+{
+    text-decoration:none;
+    color: black;
+}
+.menu
+{
+    position: relative;
+    width: calc(100% - 350px);
+    height: 70px;
+    float: left;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+    margin-bottom: 15px;
+}
+.tagbox
+{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2.5em;
+}
+.menu .tag
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+.menu h4
+{
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cardbox
+{ 
+    float: left;
+    width: calc(100% - 330px);
+    margin-bottom: 20px;
+}
+.cardbox .card
+{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.719);
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.cardbox .card h3
+{
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.intro
+{
+    position: relative;
+    width: 300px;
+    min-height: 500px;
+    float: right;
+}
+.intro h2{
+    text-align: center;
+}
+.user
+{
+    position: relative;
+    display: block;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1080px)
+{
+    body
+    {
+        margin-top: 40px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .intro h2{
+        text-align: start;
+        padding : 0 0 0 3em;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .menu
+    {
+        width: 100%;
+    }
+    .cardbox
+    {
+        width: 100%;
+    }
+    .intro
+    {
+        width: 100%;
+        min-height: 60px;
+        margin-bottom: 20px;
+    }
+    .user
+    {
+        display: block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+        float: left;
+    }
+}
