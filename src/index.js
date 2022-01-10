@@ -4,7 +4,7 @@ import Menu from './Menu';
 import Main from './component/Main';
 import Intro from './Intro';
 import "./style.css";
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import Article from './component/Article';
 import Hyperlink from './component/Link';
 import Project from './component/Project';
