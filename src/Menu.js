@@ -16,7 +16,7 @@ const Menu = () => {
                     <Link to="/article" style={{ textDecoration: 'none' }}><FcNews /><h4>文章</h4></Link>
                 </div>
                 <div className="tag">
-                    <Link to="/link" style={{ textDecoration: 'none' }}><FcLink /><h4>連結</h4></Link>
+                    <Link to="/link" style={{ textDecoration: 'none' }}><FcLink /><h4>URL</h4></Link>
                 </div>
             </IconContext.Provider >
         </div>
