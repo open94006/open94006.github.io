@@ -20,22 +20,22 @@
 ![首頁載入畫面](https://i.imgur.com/Yp62fks.png)  
 - 首頁頁面(載入完成)  
 ![首頁完成載入](https://i.imgur.com/8lbJR1w.png)  
-- 新增資料(讀取前)    
+- 新增資料(讀取前)  
 ![新增讀取前](https://i.imgur.com/CouzdMu.png)  
-- 新增資料(讀取中)    
+- 新增資料(讀取中)  
 ![新增讀取中](https://i.imgur.com/zJ0FXKS.png)  
-- 首頁頁面(新增後)    
+- 首頁頁面(新增後)  
 ![首頁新增後](https://i.imgur.com/azR7XpG.png)  
 
 #### 完成心得  
 以往在Laravel上是以controller來傳遞資料，在blade模板呈現資料的，基本上都在路由上操作就可以了。  
-這麼做的缺點就是CRUD的動作都要重整一次頁面，雖然有一部份可以用AJAX解決，但不能做到即時與畫面互動。  
-這次使用react.js來去呼叫api，laravel的部分只需要整理好資料就可以了，也因此多接觸到resources的功能rreact.js也能專心作呈現畫面的工作，前後端分離的優勢就出來了。  
+這麼做的缺點就是**CRUD的動作都要重整一次頁面**，雖然有一部份可以用AJAX解決，但不能做到**即時與畫面互動**。  
+這次使用react.js來去呼叫api，laravel的部分**只需要整理好資料**就可以了，也因此多接觸到resources的功能rreact.js也能專心作呈現畫面的工作，**前後端分離的優勢**就出來了。  
 
 #### 參考資源  
-Laravel ReactJS CRUD with RestAPI Tutorial    
+Laravel ReactJS CRUD with RestAPI Tutorial  
 網址：https://www.youtube.com/watch?v=RXD7wgP5BXU  
-Eloquent API Resources    
+Eloquent API Resources  
 網址：https://blog.johnsonlu.org/laravel-eloquent-api-resources/  
 
 ---
@@ -51,10 +51,21 @@ Eloquent API Resources
 
 ## 【React.js - GitHub Pages】  
 製作個人的GitHub Pages，並使用React.js  
+
 #### 為何學習？  
+- 想要建立個人網站，把自我介紹和做過的專案整理上去
+- 不靠網路上一些HTML模板，打算自己完成有RWD的頁面
+
 #### 畫面呈現  
+> 其實就是您現在所瀏覽的這個網站...
+
 #### 完成心得  
+會使用GitHub Pages主要是能快速佈署靜態網站，同時也能有SSL及高推廣性的優勢。
+另外也能藉此多練習Git語法，對練習上傳自己的程式碼很有幫助
+
 #### 參考資源  
+How to Deploy React App to GitHub Pages  
+網址：https://www.youtube.com/watch?v=F8s4Ng-re0E  
 
 ---
 
@@ -76,7 +87,7 @@ Eloquent API Resources
 
 #### 完成心得  
 其實也還好，就只是寫個小程式而已，濃縮程式碼才是練習目的。  
-另外無論是我或是朋友，使用該程式還是沒中獎，略顯可惜。  
+另外無論是我或是朋友，使用該程式**還是沒中獎**，略顯可惜。  
 
 #### 參考資源  
 威力彩遊戲介紹  
