@@ -1,4 +1,4 @@
-import { FcHome, FcSurvey, FcTimeline, FcLink } from "react-icons/fc";
+import { FcHome, FcSurvey, FcTimeline } from "react-icons/fc";
 import { IconContext } from "react-icons/lib";
 import { Link } from "react-router-dom";
 
@@ -15,9 +15,9 @@ const Menu = () => {
                 <div className="tag">
                     <Link to="/exp" style={{ textDecoration: 'none' }}><FcTimeline /><h4>經歷</h4></Link>
                 </div>
-                <div className="tag">
+                {/* <div className="tag">
                     <Link to="/link" style={{ textDecoration: 'none' }}><FcLink /><h4>URL</h4></Link>
-                </div>
+                </div> */}
             </IconContext.Provider >
         </div>
     );

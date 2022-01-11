@@ -6,7 +6,7 @@ import Intro from './Intro';
 import "./style.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Exp from './component/Exp';
-import Hyperlink from './component/Link';
+// import Hyperlink from './component/Link';
 import Project from './component/Project';
 
 ReactDOM.render(
@@ -16,7 +16,7 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/exp" element={<Exp />} />
-        <Route path="/link" element={<Hyperlink />} />
+        {/* <Route path="/link" element={<Hyperlink />} /> */}
         <Route path="/project" element={<Project />} />
       </Routes>
       <Intro />
