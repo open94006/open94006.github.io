@@ -143,4 +143,4 @@ How to Deploy React App to GitHub Pages
 
 ### 參考資源  
 威力彩遊戲介紹  
-網址：https://www.taiwanlottery.com.tw/Superlotto638/index.asp
+網址：https://www.taiwanlottery.com.tw/Superlotto638/index.asp  

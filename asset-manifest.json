@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/static/css/main.557a1903.css",
-    "main.js": "/static/js/main.c58e71c8.js",
+    "main.js": "/static/js/main.7d725cc1.js",
     "static/js/221.16c6dc13.chunk.js": "/static/js/221.16c6dc13.chunk.js",
     "static/js/383.23d416b0.chunk.js": "/static/js/383.23d416b0.chunk.js",
     "static/js/922.7c537e29.chunk.js": "/static/js/922.7c537e29.chunk.js",
     "static/js/329.28f0befa.chunk.js": "/static/js/329.28f0befa.chunk.js",
-    "static/js/286.11dcef12.chunk.js": "/static/js/286.11dcef12.chunk.js",
+    "static/js/286.bd96ea7f.chunk.js": "/static/js/286.bd96ea7f.chunk.js",
     "static/media/Daniel_2022.png": "/static/media/Daniel_2022.26311bfb20901878cdbc.png",
     "static/media/Daniel_2021.jpeg": "/static/media/Daniel_2021.4b3209817b07c21262af.jpeg",
-    "static/media/Project.md": "/static/media/Project.54498f653b4e0234233f.md",
+    "static/media/Project.md": "/static/media/Project.40cde6bc855dba44991f.md",
     "static/media/Link.md": "/static/media/Link.5c10983633739a673d1e.md",
     "static/media/Exp.md": "/static/media/Exp.bf94dba3cf47c815715d.md",
     "index.html": "/index.html",
     "static/media/Main.md": "/static/media/Main.17098e88989d727d959b.md",
     "main.557a1903.css.map": "/static/css/main.557a1903.css.map",
-    "main.c58e71c8.js.map": "/static/js/main.c58e71c8.js.map"
+    "main.7d725cc1.js.map": "/static/js/main.7d725cc1.js.map"
   },
   "entrypoints": [
     "static/css/main.557a1903.css",
-    "static/js/main.c58e71c8.js"
+    "static/js/main.7d725cc1.js"
   ]
 }
