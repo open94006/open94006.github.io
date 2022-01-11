@@ -143,6 +143,7 @@ code
         margin-top: 40px;
         margin-left: 5%;
         margin-right: 5%;
+        overflow-x: hidden;
     }
     .intro h2{
         text-align: start;

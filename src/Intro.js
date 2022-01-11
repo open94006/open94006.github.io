@@ -1,4 +1,5 @@
-import user from "./data/Daniel_2022.jpg";
+import user from "./data/Daniel_2022.png";
+import { ImMail, ImFacebook2, ImGithub } from 'react-icons/im';
 
 const Intro = () => {
     return (
@@ -7,17 +8,30 @@ const Intro = () => {
                 <img src={user} className="logo" alt="It's me. Daniel!" />
             </div>
             <div>
-                <h2> Daniel Lin</h2>
-                <p>畢業於高雄科技大學資訊管理系，行事風格習慣規劃後並踏實完成，大學期間曾任系學會副會長、系籃隊長、班級代表等職務，曾於高雄雙欣科技實習半年。
+                <h2>林致嘉 Daniel Lin</h2>
+                <p>畢業於<b>高雄科技大學資訊管理系</b>，行事風格習慣規劃後並踏實完成。</p>
+                <p>大學期間曾任系學會副會長、系籃隊長、班級代表、畢業代表等職務，曾任高雄雙欣科技<b>實習PHP工程師半年</b>。
                 </p>
+                <hr />
             </div>
             <div>
-                <h4>程式語言與框架經驗：</h4>
-                <ul>
-                    <li>擅長：PHP(Laravel)、SQL</li>
-                    <li>架站伺服器：XAMPP</li>
-                    <li>曾接觸學習：JS(react)、C++、Python、ASP.NET、Linux、Java</li>
-                </ul>
+                <h4>聯絡方式</h4>
+                <p><ImMail />&ensp;open94006880103@gmail.com</p>
+                <p><ImFacebook2 />&ensp;
+                    <a href="https://www.facebook.com/open94006/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Facebook
+                    </a>
+                </p>
+                <p><ImGithub />&ensp;
+                    <a href="https://github.com/open94006"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        GitHub
+                    </a>
+                </p>
                 <hr />
             </div>
 

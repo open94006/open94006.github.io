@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Markdown from 'markdown-to-jsx';
 
-function Article() {
-    const file_name = 'Article.md';
+function Exp() {
+    const file_name = 'Exp.md';
     const [post, setPost] = useState('');
 
     useEffect(() => {
@@ -25,4 +25,4 @@ function Article() {
     );
 }
 
-export default Article;
+export default Exp;
