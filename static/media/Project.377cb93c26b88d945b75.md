@@ -91,7 +91,7 @@ Eloquent API Resources
 Laravel 官方文件  
 網址：https://laravel.com/  
 Laravel 實戰經驗分享  鐵人賽文章  
-網址：https://ithelp.ithome.com.tw/users/20130722/ironman/3818  
+網址：https://bit.ly/3zJxIAe
 Laravel 8 custom authentication  
 網址：https://www.youtube.com/watch?v=UGW01ttsfpQ  
 Laravel 8 Mail | Laravel 8 Send Email Tutorial  
@@ -143,4 +143,4 @@ How to Deploy React App to GitHub Pages
 
 ### 參考資源  
 威力彩遊戲介紹  
-網址：https://www.taiwanlottery.com.tw/Superlotto638/index.asp  
+網址：https://bit.ly/33lK1a2
