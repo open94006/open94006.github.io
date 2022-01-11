@@ -16,7 +16,7 @@
 一個以react.js為前端框架，api則使用Laravel為後端框架的小型CRUD網站  
 
 ### 為何學習？  
-- 試做一個簡單的**前後端分離**網站  
+- 試做一個**前後端分離**的簡單CRUD網站  
 - 符合業界上的**職務分工**，理解前後端各自會遇到的問題，以及**需要溝通**的部分  
 - 練習使用Laravel該如何結合前端框架  
 
@@ -92,7 +92,7 @@ Eloquent API Resources
 Laravel 官方文件  
 網址：https://laravel.com/  
 Laravel 實戰經驗分享  鐵人賽文章  
-網址：https://bit.ly/3zJxIAe
+網址：https://bit.ly/3zJxIAe  
 Laravel 8 custom authentication  
 網址：https://www.youtube.com/watch?v=UGW01ttsfpQ  
 Laravel 8 Mail | Laravel 8 Send Email Tutorial  
