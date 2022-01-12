@@ -1,4 +1,4 @@
-> # 「當個人生的努力家。」
+<blockquote class="mainTitle"><h1>「當個人生的努力家。」</h1></blockquote>
 
 嗨，我是林致嘉！  
 在這裡你可以看到我製作的專案和我的經歷  
