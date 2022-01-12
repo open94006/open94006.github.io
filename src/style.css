@@ -54,7 +54,7 @@ code
     height: 70px;
     float: left;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
     grid-gap: 10px;
     margin-bottom: 15px;
 }
@@ -174,5 +174,12 @@ code
         border-radius: 50%;
         overflow: hidden;
         float: left;
+    }
+    .mainTitle
+    {
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 12px;
+        text-align: center;
     }
 }
