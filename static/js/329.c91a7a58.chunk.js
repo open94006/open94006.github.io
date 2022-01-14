@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkopen94006_github_io=self.webpackChunkopen94006_github_io||[]).push([[329],{329:function(e,i,c){e.exports=c.p+"static/media/Main.5c5b56c79b4492c48a8f.md"}}]);
