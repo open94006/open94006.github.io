@@ -18,7 +18,6 @@ ReactDOM.render(
         <Route path="/exp" element={<Exp />} />
         {/* <Route path="/link" element={<Hyperlink />} /> */}
         <Route path="/project" element={<Project />} />
-        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <Intro />
     </BrowserRouter>
