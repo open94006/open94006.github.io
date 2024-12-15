@@ -1,26 +1,24 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Menu from './Menu';
-import Main from './component/Main';
-import Intro from './Intro';
-import "./style.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Exp from './component/Exp';
-// import Hyperlink from './component/Link';
-import Project from './component/Project';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Main from './pages/main';
+import Header from './pages/header';
+import Footer from './pages/footer';
+import './asset/css/main.css';
 
-ReactDOM.render(
-  <div>
+const App = () => (
     <BrowserRouter>
-      <Menu />
-      <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/exp" element={<Exp />} />
-        {/* <Route path="/link" element={<Hyperlink />} /> */}
-        <Route path="/project" element={<Project />} />
-      </Routes>
-      <Intro />
+        <Header></Header>
+        <div>
+            <Routes>
+                <Route path="/" element={<Main fileName="about" />} />
+                <Route path="/exp" element={<Main fileName="exp" />} />
+                <Route path="/about" element={<Main fileName="about" />} />
+            </Routes>
+        </div>
+        <Footer></Footer>
     </BrowserRouter>
-  </div>,
-  document.getElementById('root')
 );
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);

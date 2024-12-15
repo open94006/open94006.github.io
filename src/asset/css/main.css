@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/earlyaccess/notosanstc.css");
+* {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.main1 {
+  color: #aaf;
+}
+.main1 .point1 {
+  color: #faf;
+}
+
+/*# sourceMappingURL=main.css.map */
