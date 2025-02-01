@@ -1,7 +1,0 @@
-baseURL: https://example.org/
-languageCode: zh-tw
-title: Test Daniel
-theme: ['PaperMod']
-module:
-    imports:
-        - path: github.com/adityatelange/hugo-PaperMod
