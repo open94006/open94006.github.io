@@ -5,28 +5,21 @@
     <link>http://localhost:1313/</link>
     <description>Recent content on Test Daniel</description>
     <generator>Hugo -- 0.142.0</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 16 Sep 2020 11:30:03 +0000</lastBuildDate>
+    <language>zh-tw</language>
+    <lastBuildDate>Tue, 15 Sep 2020 11:30:03 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My 1st xxx</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
-      <pubDate>Wed, 16 Sep 2020 11:30:03 +0000</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
-      <description>Desc Text.</description>
-    </item>
-    <item>
       <title>My 1st yyy</title>
-      <link>http://localhost:1313/posts/one/</link>
+      <link>http://localhost:1313/posts/0201/acticle/</link>
       <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
-      <guid>http://localhost:1313/posts/one/</guid>
+      <guid>http://localhost:1313/posts/0201/acticle/</guid>
       <description>Desc Text.</description>
     </item>
     <item>
-      <title>My 1st zzz</title>
-      <link>http://localhost:1313/posts/two/</link>
+      <title>My 2 yyy</title>
+      <link>http://localhost:1313/posts/0202/acticle/</link>
       <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
-      <guid>http://localhost:1313/posts/two/</guid>
+      <guid>http://localhost:1313/posts/0202/acticle/</guid>
       <description>Desc Text.</description>
     </item>
   </channel>
