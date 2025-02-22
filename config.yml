@@ -5,24 +5,21 @@ theme: ['PaperMod']
 ignoreLogs: ['warning-goldmark-raw-html']
 menus:
     main:
-        - name: 首頁
-          pageRef: /
-          weight: 10
         - name: 關於我
           pageRef: /about
+          weight: 10
+        - name: 文章分類
+          pageRef: /categories
           weight: 20
         - name: 標籤
           pageRef: /tags
-          weight: 25
-        - name: 分類
-          pageRef: /categories
-          weight: 25
-        - name: 搜尋
-          pageRef: /search
           weight: 30
-        - name: 歷史
+        - name: 歷史紀錄
           pageRef: /archives
           weight: 40
+        - name: 搜尋
+          pageRef: /search
+          weight: 50
 outputs:
     home:
         - HTML
@@ -30,8 +27,10 @@ outputs:
         - JSON # necessary for search
 params:
     homeInfoParams:
-        Title: 哈囉！歡迎來到我的部落格
-        Content: 一切都才剛要開始
+        Title: 林致嘉 Daniel Lin
+        Content: |
+            這裡是我生活與工作紀錄的地方  
+            把這顆種子埋下，希望能長大茁壯😎
     socialIcons: # optional
         - name: 'facebook'
           url: 'https://www.facebook.com/open94006/'
@@ -48,7 +47,7 @@ params:
         minMatchCharLength: 0
         keys: ['title', 'permalink', 'summary', 'content']
     taxonomies:
-        category: categories
+        categories: categories
         tag: tags
 module:
     imports:
