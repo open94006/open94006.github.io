@@ -11,9 +11,18 @@ menus:
         - name: 關於我
           pageRef: /about
           weight: 20
+        - name: 標籤
+          pageRef: /tags
+          weight: 25
+        - name: 分類
+          pageRef: /categories
+          weight: 25
         - name: 搜尋
           pageRef: /search
           weight: 30
+        - name: 歷史
+          pageRef: /archives
+          weight: 40
 outputs:
     home:
         - HTML
@@ -37,8 +46,10 @@ params:
         distance: 1000
         threshold: 0.4
         minMatchCharLength: 0
-        # limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
         keys: ['title', 'permalink', 'summary', 'content']
+    taxonomies:
+        category: categories
+        tag: tags
 module:
     imports:
         - path: github.com/adityatelange/hugo-PaperMod
