@@ -19,12 +19,11 @@ ShowBreadCrumbs: true # 導覽路徑
 2. ✅ 新增 tag
     - tags 頁面的標題與描述，要到 `content/tags/_index.md` 來調整
     - 資料來源 [How to make custom title for Tags page ?](https://github.com/adityatelange/hugo-PaperMod/discussions/619)
-3. 個人介紹與相關連結
+3. ✅ 個人介紹與相關連結
 
 ## SEO
 
-1. favicon, title
-2. 研究看看能加啥
+1. ✅ favicon, title
 
 ## Acticle
 

@@ -26,14 +26,17 @@ outputs:
         - RSS
         - JSON # necessary for search
 params:
+    assets:
+        favicon: '/favicon.ico'
+        favicon16x16: '/favicon-16x16.png'
+        favicon32x32: '/favicon-32x32.png'
+        apple_touch_icon: '/apple-touch-icon.png'
     homeInfoParams:
         Title: 林致嘉 Daniel Lin
         Content: |
             這裡是我生活與工作紀錄的地方  
             把這顆種子埋下，希望能長大茁壯😎
     socialIcons: # optional
-        - name: 'facebook'
-          url: 'https://www.facebook.com/open94006/'
         - name: 'github'
           url: 'https://github.com/open94006'
     defaultTheme: auto
