@@ -17,13 +17,13 @@ ShowBreadCrumbs: true # 導覽路徑
 明明是值得慶祝的開頭，但全是拿來實驗用的文章
 ```
 
+## 新增一篇文
+
+```
+hugo new --kind post posts/${name}
+```
+
 ## 圖片
 
 測試個圖片
 ![母牛](images/風景.jpeg)
-
-## 新增一篇文
-
-```
-hugo new --kind post <name>
-```
