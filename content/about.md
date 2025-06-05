@@ -36,7 +36,7 @@ TocOpen: false # 展開目錄
 
 -   ### 維護 GlitterTS 專案
 
-    GlitterTS 是公司使用的框架，我負責維護底層程式碼、控管程式碼品質
+    GlitterTS 是公司使用的框架，我負責開發與維護各項系統功能、控管程式碼品質
 
 -   ### 開發 [Shopnex](https://www.shopnex.tw) 開店平台
 
