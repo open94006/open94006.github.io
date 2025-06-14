@@ -1,7 +1,7 @@
 baseURL: https://open94006.github.io/
 languageCode: zh-tw
 title: open94006
-theme: ['PaperMod']
+# theme: ['PaperMod']
 ignoreLogs: ['warning-goldmark-raw-html']
 menus:
     main:
@@ -54,5 +54,5 @@ params:
         tag: tags
 module:
     imports:
-        # - path: ./PaperMod
-        - path: github.com/adityatelange/hugo-PaperMod
+        - path: ./PaperMod
+        # - path: github.com/adityatelange/hugo-PaperMod
