@@ -54,4 +54,5 @@ params:
         tag: tags
 module:
     imports:
-        - path: github.com/adityatelange/hugo-PaperMod
+        - path: ./PaperMod
+        # - path: github.com/adityatelange/hugo-PaperMod
