@@ -1,0 +1,174 @@
+.post-content {
+    line-height: 1.9;
+}
+
+.paginav a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Scroll Offset for headings */
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+    scroll-margin-top: 20px;
+}
+
+/* Global TOC Styling (Mobile & Desktop) */
+.toc {
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin: 0 0 var(--content-gap) 0; /* Mobile default margin */
+}
+
+.toc details summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: var(--primary);
+    list-style: none; /* Hide default marker */
+}
+
+.toc details summary::-webkit-details-marker {
+    display: none;
+}
+
+.toc .inner {
+    margin: 0;
+    padding: 0;
+}
+
+.toc .inner ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+.toc .inner ul ul {
+    padding-inline-start: 16px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.toc a {
+    display: block;
+    color: var(--secondary);
+    font-size: 14px;
+    padding: 4px 8px;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+    line-height: 1.4;
+}
+
+.toc a:hover {
+    background: var(--entry);
+    color: var(--primary);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+    text-decoration: none;
+    transform: translateY(-1px); /* Slight lift */
+}
+
+/* Desktop-Specific (Floating Sidebar & Show on Scroll) */
+@media screen and (min-width: 1300px) {
+    .toc {
+        position: fixed;
+        top: 80px;
+        right: 20px;
+        width: 260px;
+        max-height: 80vh;
+        overflow-y: auto;
+        z-index: 99;
+        margin: 0; /* Reset margin for fixed position */
+
+        /* Hidden initially for scroll effect */
+        opacity: 0;
+        transform: translateY(10px);
+        transition: opacity 0.4s ease, transform 0.4s ease;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    .toc.visible {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+        pointer-events: auto;
+    }
+}
+
+/* Home Info Profile Layout */
+.first-entry.home-info {
+    min-height: 240px; /* Reduced from default 320px */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-info-flex {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.profile-side {
+    flex-shrink: 0;
+}
+
+.profile-img {
+    width: 150px; /* Larger as requested */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--border);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-info h1 {
+    margin: 0 0 10px 0;
+    font-size: 32px;
+}
+
+.home-info .entry-content {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Post Content Images */
+.post-content img {
+    height: 300px;
+    width: auto; /* Maintain aspect ratio */
+    object-fit: contain;
+}
+
+/* Code Blocks */
+.post-content .highlight,
+.post-content pre {
+    border-radius: 12px;
+}
+
+@media screen and (max-width: 768px) {
+    .home-info-flex {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+}

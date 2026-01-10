@@ -7,8 +7,8 @@ summary:
 draft: 0
 categories: ['管理學']
 tags: ['Smart']
-showToc: false # 顯示目錄區塊
-TocOpen: false # 展開目錄
+showToc: true # 顯示目錄區塊
+TocOpen: true # 展開目錄
 ShowReadingTime: true # 閱讀時間
 ShowBreadCrumbs: false # 導覽路徑
 ---

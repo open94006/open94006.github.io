@@ -31,8 +31,10 @@ params:
         favicon16x16: '/favicon-16x16.png'
         favicon32x32: '/favicon-32x32.png'
         apple_touch_icon: '/apple-touch-icon.png'
+        showCodeCopyButtons: true
     homeInfoParams:
         Title: 林致嘉 Daniel Lin
+        imageUrl: '/headshot.jpg'
         Content: |
             這裡是我生活與工作紀錄的地方  
             把這顆種子埋下，希望能長大茁壯😎
@@ -41,6 +43,9 @@ params:
           url: 'https://github.com/open94006'
     defaultTheme: auto
     searchHidden: true
+    ShowPostNavLinks: true
+    ShowToc: true
+    TocOpen: true # Optional: opens TOC by default
     fuseOpts:
         isCaseSensitive: false
         shouldSort: true

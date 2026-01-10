@@ -1,0 +1,16 @@
+<script>
+  // Show TOC on scroll for large screens
+  document.addEventListener('DOMContentLoaded', function () {
+    const toc = document.querySelector('.toc');
+    if (toc) {
+      window.addEventListener('scroll', function () {
+        // Show after scrolling 200px
+        if (window.scrollY > 200) {
+          toc.classList.add('visible');
+        } else {
+          toc.classList.remove('visible');
+        }
+      });
+    }
+  });
+</script>
