@@ -7,14 +7,14 @@
     padding-bottom: 10px;
 }
 
-/* Scroll Offset for headings */
+/* Scroll Offset for headings to prevent being covered by sticky nav */
 .post-content h1,
 .post-content h2,
 .post-content h3,
 .post-content h4,
 .post-content h5,
 .post-content h6 {
-    scroll-margin-top: 20px;
+    scroll-margin-top: 80px; /* Adjusted for 68px header height */
 }
 
 /* Global TOC Styling (Mobile & Desktop) */
