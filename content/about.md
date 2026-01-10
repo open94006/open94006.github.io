@@ -8,7 +8,9 @@ showToc: false # 顯示目錄區塊
 TocOpen: false # 展開目錄
 ---
 
-# 林致嘉 Daniel Lin
+# Daniel Lin 林致嘉
+
+![頭貼](images/頭貼.jpg?h=225 '頭貼')
 
 畢業於高雄科技大學資訊管理系，擅長使用 **Typescript**, **MySQL**, **Express** (Node.js)
 

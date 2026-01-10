@@ -1,8 +1,14 @@
 baseURL: https://open94006.github.io/
 languageCode: zh-tw
-title: open94006
+title: Daniel Lin 林致嘉
 # theme: ['PaperMod']
 ignoreLogs: ['warning-goldmark-raw-html']
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+    highlight:
+        noClasses: false
 menus:
     main:
         - name: 關於我
@@ -33,7 +39,7 @@ params:
         apple_touch_icon: '/apple-touch-icon.png'
         showCodeCopyButtons: true
     homeInfoParams:
-        Title: 林致嘉 Daniel Lin
+        Title: Daniel Lin 林致嘉
         imageUrl: '/headshot.jpg'
         Content: |
             這裡是我生活與工作紀錄的地方  

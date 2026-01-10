@@ -112,7 +112,7 @@ func main() {
 
 ## 圖片 (Images)
 
-![測試圖片](https://www.moedict.tw/%E7%AF%84%E4%BE%8B.png?font=wt064 '這是一張佔位圖片')
+![測試圖片](https://www.moedict.tw/%E7%AF%84%E4%BE%8B.png?font=wt064&h=300 '這是一張佔位圖片')
 
 ---
 

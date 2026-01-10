@@ -77,15 +77,21 @@
 
 /* Desktop-Specific (Floating Sidebar & Show on Scroll) */
 @media screen and (min-width: 1300px) {
+    .post-single {
+        max-width: 800px; /* Narrower post content */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .toc {
         position: fixed;
         top: 80px;
-        right: 20px;
+        left: calc(50% + 420px); /* Positioned relative to center */
         width: 260px;
         max-height: 80vh;
         overflow-y: auto;
         z-index: 99;
-        margin: 0; /* Reset margin for fixed position */
+        margin: 0;
 
         /* Hidden initially for scroll effect */
         opacity: 0;
@@ -109,13 +115,20 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0;
 }
 
 .home-info-flex {
     display: flex;
-    align-items: center;
-    gap: 30px;
+    flex-direction: column;
+    gap: 15px;
     padding: 20px 0;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .profile-side {
@@ -123,8 +136,8 @@
 }
 
 .profile-img {
-    width: 150px; /* Larger as requested */
-    height: 150px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid var(--border);
@@ -134,12 +147,12 @@
 .content-side {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    gap: 10px;
 }
 
 .home-info h1 {
-    margin: 0 0 10px 0;
-    font-size: 32px;
+    margin: 0;
+    font-size: 24px;
 }
 
 .home-info .entry-content {
@@ -147,11 +160,38 @@
     line-height: 1.6;
 }
 
+/* Sticky Header */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--theme);
+    border-bottom: 1px solid var(--border);
+}
+
 /* Post Content Images */
 .post-content img {
-    height: 300px;
+    max-width: 600px;
     width: auto; /* Maintain aspect ratio */
+    height: auto;
     object-fit: contain;
+}
+
+/* Specific fix: if height attribute is present in HTML, respect it */
+.post-content img[height] {
+    height: attr(height px) !important; /* Fallback for browsers that don't support attr() in property values */
+}
+
+/* Since attr() is not well supported, we use a different approach:
+   If there's a height attribute, we DON'T set height: auto in CSS */
+.post-content img {
+    max-width: 600px;
+    width: auto;
+    object-fit: contain;
+}
+
+.post-content img:not([height]) {
+    height: auto;
 }
 
 /* Code Blocks */
@@ -163,12 +203,194 @@
 @media screen and (max-width: 768px) {
     .home-info-flex {
         flex-direction: column;
-        text-align: center;
-        gap: 20px;
+        text-align: left;
+        padding: 0 8px;
+    }
+
+    .profile-header {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        gap: 15px !important;
+    }
+
+    .profile-header header.entry-header {
+        margin: 0 !important;
     }
 
     .profile-img {
-        width: 120px;
-        height: 120px;
+        width: 80px !important;
+        height: 80px !important;
+    }
+
+    .home-info h1 {
+        font-size: 24px !important;
+    }
+}
+
+/* Home Layout: Side by Side */
+.main {
+    max-width: 1000px; /* Default narrower container for single posts/archives */
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column; /* Default vertical on mobile */
+    margin-top: 20px;
+    gap: 24px;
+}
+
+@media screen and (min-width: 1024px) {
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .home-info h1 {
+        font-size: 32px;
+    }
+
+    .profile-header {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .home-container {
+        flex-direction: row; /* Side by side on desktop */
+        align-items: flex-start;
+        gap: 60px;
+    }
+
+    .home-sidebar {
+        flex: 0 0 300px; /* Fixed width for sidebar */
+        position: sticky;
+        top: 40px;
+    }
+
+    .home-posts {
+        flex: 1;
+    }
+}
+
+/* Fix sidebar content layout */
+.home-sidebar .home-info-flex {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 20px;
+}
+
+.home-sidebar .profile-header {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.home-sidebar .profile-img {
+    width: 120px;
+    height: 120px;
+}
+
+.home-sidebar .content-side {
+    align-items: flex-start;
+}
+
+/* Mobile Menu Styling */
+#menu-trigger {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--primary);
+    cursor: pointer;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.menu-overlay.open {
+    display: block;
+    opacity: 1;
+}
+
+body.noscroll {
+    overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        justify-content: flex-start;
+        height: 68px;
+        line-height: 68px;
+        align-items: center;
+    }
+
+    .logo {
+        margin: auto;
+    }
+
+    #menu-trigger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1001;
+        height: 68px;
+        width: 68px;
+    }
+
+    #menu-trigger.open {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    #menu {
+        position: fixed;
+        top: 0;
+        left: -280px; /* Hide off-screen */
+        width: 260px;
+        height: 100vh;
+        background: var(--theme);
+        border-right: 1px solid var(--border);
+        flex-direction: column;
+        padding-top: 80px;
+        transition: left 0.3s ease;
+        z-index: 1000;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: flex-start;
+        padding-left: 20px;
+        margin: 0; /* Override default margin */
+        overflow-y: auto;
+    }
+
+    #menu.open {
+        left: 0;
+    }
+
+    #menu li {
+        width: 100%;
+        margin: 0;
+        padding: 10px 0;
+        border-bottom: 1px solid var(--border);
+    }
+
+    #menu li:last-child {
+        border-bottom: none;
+    }
+
+    /* Adjust list item spacing override */
+    #menu li + li {
+        margin-inline-start: 0;
     }
 }
