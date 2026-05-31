@@ -237,14 +237,15 @@
     }
 
     body.floating-toc-ready .top-link {
-        bottom: 112px;
+        right: 20px;
+        bottom: 96px;
     }
 
     body.floating-toc-ready .toc-fab {
         display: inline-flex;
         position: fixed;
-        right: 30px;
-        bottom: 60px;
+        right: 20px;
+        bottom: 40px;
         z-index: 120;
         transition:
             transform 0.25s ease,
