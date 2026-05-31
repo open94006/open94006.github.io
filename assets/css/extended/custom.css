@@ -1,10 +1,15 @@
 .post-content {
+    font-size: 16px;
     line-height: 1.9;
 }
 
 .paginav a {
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.entry-hint-parent {
+    justify-content: center;
 }
 
 /* Scroll Offset for headings to prevent being covered by sticky nav */
@@ -27,17 +32,16 @@
     margin: 0 0 var(--content-gap) 0; /* Mobile default margin */
 }
 
-.toc details summary {
-    cursor: pointer;
+.toc-title {
+    font-weight: 600;
     font-weight: 600;
     font-size: 16px;
     margin-bottom: 12px;
     color: var(--primary);
-    list-style: none; /* Hide default marker */
 }
 
-.toc details summary::-webkit-details-marker {
-    display: none;
+.toc .details {
+    display: inline;
 }
 
 .toc .inner {
@@ -51,7 +55,7 @@
 }
 
 .toc .inner ul ul {
-    padding-inline-start: 16px;
+    padding-inline-start: 4px;
     margin-top: 4px;
     margin-bottom: 4px;
 }
@@ -63,7 +67,9 @@
     padding: 4px 8px;
     text-decoration: none;
     border-radius: 6px;
-    transition: background 0.2s, color 0.2s;
+    transition:
+        background 0.2s,
+        color 0.2s;
     line-height: 1.4;
 }
 
@@ -75,37 +81,179 @@
     transform: translateY(-1px); /* Slight lift */
 }
 
-/* Desktop-Specific (Floating Sidebar & Show on Scroll) */
-@media screen and (min-width: 1300px) {
-    .post-single {
-        max-width: 800px; /* Narrower post content */
-        margin-left: auto;
-        margin-right: auto;
+/* Floating TOC Trigger */
+.toc-fab {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 0;
+    border-radius: 999px;
+    background: var(--tertiary);
+    color: var(--primary);
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.18);
+    cursor: pointer;
+}
+
+.toc-fab svg {
+    width: 18px;
+    height: 18px;
+}
+
+.toc-fab.is-active {
+    background: var(--primary);
+    color: var(--theme);
+}
+
+.toc-fab:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 3px;
+}
+
+@supports selector(.main:has(.post-single > .toc)) {
+    @media screen and (min-width: 1300px) {
+        .main:has(.post-single > .toc) {
+            max-width: 1180px;
+        }
+
+        .post-single:has(> .toc) {
+            display: grid;
+            grid-template-columns: minmax(220px, 33fr) minmax(0, 67fr);
+            column-gap: 40px;
+            align-items: start;
+            max-width: none;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .post-single:has(> .toc) > .toc {
+            position: sticky;
+            top: 92px;
+            left: auto;
+            grid-column: 1;
+            width: 100%;
+            max-height: calc(100vh - 120px);
+            overflow-y: auto;
+            margin: 0;
+            opacity: 1;
+            transform: none;
+            visibility: visible;
+            pointer-events: auto;
+            z-index: 30;
+            box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+            scrollbar-width: none;
+        }
+
+        .post-single:has(> .toc) > .toc.is-scrolling {
+            scrollbar-width: thin;
+        }
+
+        .post-single:has(> .toc) > .toc::-webkit-scrollbar {
+            width: 0;
+        }
+
+        .post-single:has(> .toc) > .toc.is-scrolling::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .post-single:has(> .toc) > .toc.is-scrolling::-webkit-scrollbar-thumb {
+            background: color-mix(in srgb, var(--secondary) 50%, transparent);
+            border-radius: 999px;
+        }
+
+        .post-single:has(> .toc) > .toc.is-scrolling::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .post-single:has(> .toc) > *:not(.toc) {
+            grid-column: 2;
+            min-width: 0;
+        }
+
+        /* Header spans full width above both TOC and content */
+        .post-single:has(> .toc) > .post-header {
+            grid-column: 1 / -1;
+            text-align: center;
+        }
+
+        .post-single:has(> .toc) .post-header,
+        .post-single:has(> .toc) .post-content,
+        .post-single:has(> .toc) .post-footer {
+            min-width: 0;
+        }
+
+        .post-single:has(> .toc) .post-content table,
+        .post-single:has(> .toc) .post-content .highlight,
+        .post-single:has(> .toc) .post-content pre {
+            max-width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .entry-hint-parent {
+        justify-content: flex-start;
     }
 
-    .toc {
-        position: fixed;
-        top: 80px;
-        left: calc(50% + 420px); /* Positioned relative to center */
-        width: 260px;
-        max-height: 80vh;
-        overflow-y: auto;
-        z-index: 99;
-        margin: 0;
+    .post-meta,
+    .breadcrumbs {
+        justify-content: flex-start;
+    }
 
-        /* Hidden initially for scroll effect */
+    .post-single > .toc {
+        position: fixed;
+        right: 20px;
+        bottom: 116px;
+        left: auto;
+        width: min(360px, calc(100vw - 40px));
+        max-height: min(60vh, 420px);
+        margin: 0;
         opacity: 0;
-        transform: translateY(10px);
-        transition: opacity 0.4s ease, transform 0.4s ease;
         visibility: hidden;
         pointer-events: none;
+        transform: translateY(16px) scale(0.96);
+        transition:
+            opacity 0.25s ease,
+            transform 0.25s ease,
+            visibility 0.25s ease;
+        z-index: 119;
+        overflow: hidden;
+        box-shadow: 0 18px 40px rgba(15, 23, 42, 0.18);
     }
 
-    .toc.visible {
+    .post-single > .toc .inner {
+        max-height: calc(min(60vh, 420px) - 78px);
+        overflow-y: auto;
+        padding-right: 4px;
+    }
+
+    .post-single > .toc.mobile-open {
         opacity: 1;
-        transform: translateY(0);
         visibility: visible;
         pointer-events: auto;
+        transform: translateY(0) scale(1);
+    }
+
+    body.floating-toc-ready .top-link {
+        bottom: 112px;
+    }
+
+    body.floating-toc-ready .toc-fab {
+        display: inline-flex;
+        position: fixed;
+        right: 30px;
+        bottom: 60px;
+        z-index: 120;
+        transition:
+            transform 0.25s ease,
+            box-shadow 0.25s ease,
+            opacity 0.25s ease;
+    }
+
+    body.floating-toc-ready .toc-fab.is-active {
+        transform: translateY(-2px);
     }
 }
 
