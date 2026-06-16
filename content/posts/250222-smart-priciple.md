@@ -10,7 +10,7 @@ tags: ['SMART']
 showToc: true # 顯示目錄區塊
 TocOpen: true # 展開目錄
 ShowReadingTime: true # 閱讀時間
-ShowBreadCrumbs: false # 導覽路徑
+ShowBreadCrumbs: true # 導覽路徑
 ---
 
 ## 可以將 SMART 單字拆分成以下五種含義

@@ -8,6 +8,10 @@
     padding-bottom: 10px;
 }
 
+.post-description {
+    text-align: center;
+}
+
 .entry-hint-parent:not(h2, h3) {
     justify-content: center;
 }
@@ -193,7 +197,11 @@
 }
 
 @media screen and (max-width: 768px) {
-    .entry-hint-parent {
+    .post-description {
+        text-align: start;
+    }
+
+    .entry-hint-parent:not(h2, h3) {
         justify-content: flex-start;
     }
 
