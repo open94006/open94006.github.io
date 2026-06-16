@@ -26,4 +26,4 @@ hugo new --kind post posts/${name}
 ## 圖片
 
 測試個圖片
-![母牛](images/風景.jpeg)
+![母牛](images/風景.jpeg?h=232)
