@@ -7,7 +7,7 @@ markup:
     goldmark:
         renderer:
             unsafe: true
-            hardWrap: true
+            hardWraps: true
     highlight:
         noClasses: false
 menus:
