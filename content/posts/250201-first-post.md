@@ -4,8 +4,8 @@ title: '第一篇文'
 description: 新年快樂 恭喜發財
 author: Daniel Lin
 summary: 使用 Hugo & PaperMod 的首篇文章
-draft: 1
-categories: []
+draft: 0
+categories: ['測試用']
 tags: []
 showToc: true # 顯示目錄區塊
 TocOpen: true # 展開目錄
@@ -13,13 +13,13 @@ ShowReadingTime: true # 閱讀時間
 ShowBreadCrumbs: true # 導覽路徑
 ---
 
-```
+```text
 明明是值得慶祝的開頭，但全是拿來實驗用的文章
 ```
 
 ## 新增一篇文
 
-```
+```text
 hugo new --kind post posts/${name}
 ```
 

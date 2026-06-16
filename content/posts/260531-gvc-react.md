@@ -1,20 +1,18 @@
 ---
 date: '2026-05-31T15:16:11+08:00'
-title: 'Gvc x React'
+title: 'GVC x React 對照手冊'
 description:
 author: Daniel Lin
 summary:
 draft: 0
-categories: []
-tags: []
+categories: ['程式設計']
+tags: ['GVC', 'React']
 showToc: true # 顯示目錄區塊
 TocOpen: true # 展開目錄
 ShowReadingTime: true # 閱讀時間
 ShowBreadCrumbs: true # 導覽路徑
 showCodeCopyButtons: true
 ---
-
-# GVC → React 對照手冊
 
 > 本文件對應 `PLAYGROUND-GVC.md` 的每一個 GVC 用法，示範在 React 中的等效寫法。
 > 每個章節皆為「GVC 寫法 → React 等效寫法」的雙欄對照。

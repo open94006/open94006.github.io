@@ -6,22 +6,22 @@ author: Daniel Lin
 summary:
 draft: 0
 categories: ['管理學']
-tags: ['Smart']
+tags: ['SMART']
 showToc: true # 顯示目錄區塊
 TocOpen: true # 展開目錄
 ShowReadingTime: true # 閱讀時間
 ShowBreadCrumbs: false # 導覽路徑
 ---
 
-### 可以將 SMART 單字拆分成以下五種含義
+## 可以將 SMART 單字拆分成以下五種含義
 
--   明確（Specific）
--   可衡量（Measurable）
--   可實現（Achievable）
--   相關（Relevant）
--   有時間限制（Time-bound）
+- 明確（Specific）
+- 可衡量（Measurable）
+- 可實現（Achievable）
+- 相關（Relevant）
+- 有時間限制（Time-bound）
 
-```
+```text
 以學習「系統分析與設計」為例
 ```
 
@@ -37,10 +37,10 @@ ShowBreadCrumbs: false # 導覽路徑
 
 學習工具：
 
--   draw.io
+- draw.io
 
 網站資源：
 
--   [Flowchart Maker & Online Diagram Software](https://app.diagrams.net/)
--   [後端工程師與圖的修練](https://ithelp.ithome.com.tw/users/20092753/ironman/3916)
--   [什麼是統一建模語言 （UML）？](https://ithelp.ithome.com.tw/articles/10261018)
+- [Flowchart Maker & Online Diagram Software](https://app.diagrams.net/)
+- [後端工程師與圖的修練](https://ithelp.ithome.com.tw/users/20092753/ironman/3916)
+- [什麼是統一建模語言 （UML）？](https://ithelp.ithome.com.tw/articles/10261018)

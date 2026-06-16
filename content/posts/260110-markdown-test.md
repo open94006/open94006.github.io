@@ -5,7 +5,7 @@ description: 測試 PaperMod 主題的 Markdown 樣式渲染效果
 author: Daniel Lin
 summary: 本文包含各種 Markdown 語法範例，用於測試主題樣式、行距以及目錄功能。
 draft: 0
-categories: ['測試']
+categories: ['測試用']
 tags: ['Markdown', 'Test']
 showToc: true
 TocOpen: true
@@ -32,11 +32,11 @@ showCodeCopyButtons: true
 
 ## 文字樣式 (Text Styles)
 
--   **粗體文字 (Bold)**
--   _斜體文字 (Italic)_
--   ~~刪除線 (Strikethrough)~~
--   `行內程式碼 (Inline Code)`
--   [連結範例 (Link to Google)](https://google.com)
+- **粗體文字 (Bold)**
+- _斜體文字 (Italic)_
+- ~~刪除線 (Strikethrough)~~
+- `行內程式碼 (Inline Code)`
+- [連結範例 (Link to Google)](https://google.com)
 
 > 這是一段引用文字 (Blockquote)。
 >
@@ -48,11 +48,11 @@ showCodeCopyButtons: true
 
 ### 無序列表
 
--   項目一
--   項目二
-    -   子項目 A
-    -   子項目 B
--   項目三
+- 項目一
+- 項目二
+    - 子項目 A
+    - 子項目 B
+- 項目三
 
 ### 有序列表
 

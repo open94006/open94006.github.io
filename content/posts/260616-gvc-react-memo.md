@@ -1,12 +1,12 @@
 ---
 date: '2026-06-16T18:22:28+08:00'
-title: 'GVC 與 React 後的心得筆記'
+title: '撰寫 GVC 與 React 比對後心得筆記'
 description:
 author: Daniel Lin
 summary:
 draft: 0
-categories: []
-tags: []
+categories: ['心得文']
+tags: ['GVC', 'React']
 showToc: true # 顯示目錄區塊
 TocOpen: true # 展開目錄
 ShowReadingTime: true # 閱讀時間

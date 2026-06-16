@@ -1,20 +1,18 @@
 ---
 date: '2026-05-31T15:07:36+08:00'
-title: 'Gvc Document'
+title: 'GVC 前端框架生命週期與 MVVM 實作指南'
 description:
 author: Daniel Lin
 summary:
 draft: 0
-categories: []
-tags: []
+categories: ['程式設計']
+tags: ['GVC']
 showToc: true # 顯示目錄區塊
 TocOpen: true # 展開目錄
 ShowReadingTime: true # 閱讀時間
 ShowBreadCrumbs: true # 導覽路徑
 showCodeCopyButtons: true
 ---
-
-# GVC 前端框架生命週期與 MVVM 實作指南
 
 ## 1. 簡介 (Introduction)
 
@@ -25,7 +23,7 @@ GlitterTS 底層的 GVC (Glitter View Controller) 是一個基於 TypeScript 的
 在 GVC 中，我們透過 `gvc.bindView(map)` 來建立視圖元件。`bindView` 執行時會立刻回傳一段標準的 HTML 佔位字串（例如 `<div glem="bindView" gvc-id="{unique_id}"></div>`）。
 當 Glitter 核心掃描到 DOM 中的這個佔位標籤時，便會透過內部的 `renderBindView()` 去執行 `view()` 方法產生真實的 DOM 結構，並依序觸發生命週期。
 
-### 宣告範例：
+### 宣告範例
 
 ```typescript
 const myView = gvc.bindView({
