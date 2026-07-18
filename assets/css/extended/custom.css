@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Noto+Sans+TC:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
 .post-content {
     font-size: 16px;
     line-height: 1.9;
@@ -119,12 +121,12 @@
 @supports selector(.main:has(.post-single > .toc)) {
     @media screen and (min-width: 1300px) {
         .main:has(.post-single > .toc) {
-            max-width: 1180px;
+            max-width: 1200px;
         }
 
         .post-single:has(> .toc) {
             display: grid;
-            grid-template-columns: minmax(220px, 33fr) minmax(0, 67fr);
+            grid-template-columns: minmax(220px, 24fr) minmax(0, 76fr);
             column-gap: 40px;
             align-items: start;
             max-width: none;
