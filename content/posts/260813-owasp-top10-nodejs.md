@@ -1,6 +1,6 @@
 ---
 date: '2026-08-13T14:53:23+08:00'
-title: 'OWASP Top 10 是什麼？'
+title: 'OWASP Top 10 x Node.js'
 description:
 author: Daniel Lin
 summary:
@@ -13,6 +13,8 @@ ShowReadingTime: true # 閱讀時間
 ShowBreadCrumbs: true # 導覽路徑
 showCodeCopyButtons: true # 程式碼複製
 ---
+
+## OWASP 是什麼？
 
 OWASP 全名 **Open Web Application Security Project（開放網路軟體安全計畫）**，是個開放社群、非營利性組織，全球目前有數百個分會。
 
@@ -99,7 +101,7 @@ await prisma.user.update({ where: { id: req.user.id }, data });
 
 ---
 
-再來是**垂直越權**，集中管理 API 端點的存取權限，將 **RBAC（角色權限控制，Role-Based Access Control）**抽象化為可複用的中介層，避免路由漏掉保護。
+再來是**垂直越權**，集中管理 API 端點的存取權限，將 **RBAC（角色權限控制，Role-Based Access Control）** 抽象化為可複用的中介層，避免路由漏掉保護。
 
 > 「先看你是什麼身分，再決定能做什麼」
 
