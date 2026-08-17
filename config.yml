@@ -38,7 +38,11 @@ params:
         favicon16x16: '/favicon-16x16.png'
         favicon32x32: '/favicon-32x32.png'
         apple_touch_icon: '/apple-touch-icon.png'
+        theme_color: '#1F2937'
+        msapplication_TileColor: '#1F2937'
         showCodeCopyButtons: true
+    label:
+        iconSVG: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="30" height="30"><g fill="none" stroke="currentColor" stroke-width="10.35" stroke-linecap="butt" stroke-linejoin="miter"><path d="M37.5,67.7 H19.4 V12.2 H55 A37.9,37.9 0 0 1 55,67.7"/><path d="M49.8,39.2 V88 H85.8"/></g></svg>'
     homeInfoParams:
         Title: Daniel Lin 林致嘉
         imageUrl: '/headshot.jpg'
