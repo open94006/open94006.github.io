@@ -119,15 +119,16 @@
 }
 
 @supports selector(.main:has(.post-single > .toc)) {
-    @media screen and (min-width: 1300px) {
+    @media screen and (min-width: 1150px) {
         .main:has(.post-single > .toc) {
             max-width: 1200px;
         }
 
         .post-single:has(> .toc) {
             display: grid;
-            grid-template-columns: minmax(220px, 24fr) minmax(0, 76fr);
-            column-gap: 40px;
+            grid-template-columns: 720px 240px;
+            justify-content: center;
+            column-gap: 56px;
             align-items: start;
             max-width: none;
             margin-left: 0;
@@ -138,7 +139,8 @@
             position: sticky;
             top: 92px;
             left: auto;
-            grid-column: 1;
+            grid-column: 2;
+            grid-row: 2;
             width: 100%;
             max-height: calc(100vh - 120px);
             overflow-y: auto;
@@ -174,14 +176,23 @@
         }
 
         .post-single:has(> .toc) > *:not(.toc) {
-            grid-column: 2;
+            grid-column: 1;
             min-width: 0;
         }
 
         /* Header spans full width above both TOC and content */
         .post-single:has(> .toc) > .post-header {
             grid-column: 1 / -1;
+            grid-row: 1;
             text-align: center;
+        }
+
+        .post-single:has(> .toc) > .post-content {
+            grid-row: 2;
+        }
+
+        .post-single:has(> .toc) > .post-footer {
+            grid-row: 3;
         }
 
         .post-single:has(> .toc) .post-header,
@@ -315,7 +326,7 @@
 }
 
 .home-info .entry-content {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.6;
 }
 
@@ -425,10 +436,12 @@
         flex: 0 0 300px; /* Fixed width for sidebar */
         position: sticky;
         top: 40px;
+        order: 2; /* profile on the right */
     }
 
     .home-posts {
         flex: 1;
+        order: 1; /* post list on the left */
     }
 }
 
@@ -437,7 +450,7 @@
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
-    gap: 20px;
+    gap: 8px;
 }
 
 .home-sidebar .profile-header {
