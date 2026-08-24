@@ -87,6 +87,13 @@
     transform: translateY(-1px); /* Slight lift */
 }
 
+.toc a.active {
+    background: var(--entry);
+    color: var(--primary);
+    font-weight: 600;
+    box-shadow: inset 2px 0 0 var(--primary);
+}
+
 /* Floating TOC Trigger */
 .toc-fab {
     display: none;

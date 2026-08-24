@@ -107,5 +107,37 @@
     } else {
       mediaQuery.addListener(syncViewport);
     }
+
+    // Scrollspy: highlight the TOC entry for the heading currently being read.
+    const headingLinks = new Map();
+    toc.querySelectorAll('a[href^="#"]').forEach(function (link) {
+      headingLinks.set(decodeURIComponent(link.getAttribute('href').slice(1)), link);
+    });
+
+    const headings = Array.from(document.querySelectorAll('.post-content [id]')).filter(function (h) {
+      return headingLinks.has(h.id);
+    });
+
+    if (headings.length && typeof IntersectionObserver !== 'undefined') {
+      let activeLink = null;
+      const setActive = function (id) {
+        const link = headingLinks.get(id);
+        if (!link || link === activeLink) return;
+        if (activeLink) activeLink.classList.remove('active');
+        link.classList.add('active');
+        activeLink = link;
+        link.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+      };
+
+      const headingObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            setActive(entry.target.id);
+          }
+        });
+      }, { rootMargin: '-96px 0px -70% 0px', threshold: 0 });
+
+      headings.forEach(function (h) { headingObserver.observe(h); });
+    }
   });
 </script>
