@@ -47,6 +47,8 @@
 
 {{- $paginator := .Paginate $pages }}
 
+{{- if .IsHome }}{{ partial "home_banner.html" . }}{{ end }}
+
 <div class="home-container">
   {{- if and .IsHome site.Params.homeInfoParams }}
   <aside class="home-sidebar">

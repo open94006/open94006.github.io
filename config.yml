@@ -33,6 +33,8 @@ outputs:
         - RSS
         - JSON # necessary for search
 params:
+    description: '用好奇心，記錄生活、學習與成長的每一步。技術、投資、健康、生活與自我成長的筆記。'
+    images: ['/og-image.png'] # site-wide og:image / twitter:image fallback
     assets:
         favicon: '/favicon.ico'
         favicon16x16: '/favicon-16x16.png'

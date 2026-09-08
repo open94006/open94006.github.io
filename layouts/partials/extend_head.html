@@ -1,3 +1,5 @@
 <link rel="manifest" href="{{ "site.webmanifest" | absURL }}">
 <meta name="application-name" content="{{ site.Title }}">
 <meta name="apple-mobile-web-app-title" content="{{ site.Title }}">
+{{- /* A titleless page (about) renders an empty h1 and meta row — drop the header. */}}
+{{- if and .IsPage (not .Title) }}<style>.post-header{display:none}</style>{{ end }}
