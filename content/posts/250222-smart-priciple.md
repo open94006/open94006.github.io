@@ -6,7 +6,7 @@ author: Daniel Lin
 summary:
 draft: 0
 categories: ['管理學']
-tags: ['SMART']
+tags: ['SMART', '目標管理', '工作效率']
 showToc: true # 顯示目錄區塊
 TocOpen: true # 展開目錄
 ShowReadingTime: true # 閱讀時間

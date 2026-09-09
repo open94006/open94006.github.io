@@ -6,7 +6,7 @@ author: Daniel Lin
 summary: 本文包含各種 Markdown 語法範例，用於測試主題樣式、行距以及目錄功能。
 draft: 0
 categories: ['測試用']
-tags: ['Markdown', 'Test']
+tags: ['Markdown', 'Hugo', 'PaperMod']
 showToc: true
 TocOpen: true
 ShowReadingTime: true

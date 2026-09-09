@@ -6,7 +6,7 @@ author: Daniel Lin
 summary: 使用 Hugo & PaperMod 的首篇文章
 draft: 0
 categories: ['測試用']
-tags: []
+tags: ['Hugo', 'PaperMod', '部落格']
 showToc: true # 顯示目錄區塊
 TocOpen: true # 展開目錄
 ShowReadingTime: true # 閱讀時間

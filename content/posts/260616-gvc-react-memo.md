@@ -6,7 +6,7 @@ author: Daniel Lin
 summary:
 draft: 0
 categories: ['心得文']
-tags: ['GVC', 'React']
+tags: ['GVC', 'React', '學習筆記']
 showToc: true # 顯示目錄區塊
 TocOpen: true # 展開目錄
 ShowReadingTime: true # 閱讀時間

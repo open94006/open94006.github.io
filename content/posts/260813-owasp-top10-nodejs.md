@@ -5,8 +5,8 @@ description:
 author: Daniel Lin
 summary:
 draft: 0
-categories: []
-tags: []
+categories: ['資訊安全']
+tags: ['OWASP', 'Node.js', 'Web 安全']
 showToc: true # 顯示目錄區塊
 TocOpen: true # 展開目錄
 ShowReadingTime: true # 閱讀時間

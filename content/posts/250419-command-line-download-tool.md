@@ -6,7 +6,7 @@ author: Daniel Lin
 summary:
 draft: 0
 categories: ['程式設計']
-tags: ['CLI']
+tags: ['CLI', 'curl', 'Homebrew']
 showToc: true # 顯示目錄區塊
 TocOpen: true # 展開目錄
 ShowReadingTime: true # 閱讀時間

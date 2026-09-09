@@ -5,8 +5,8 @@ description:
 author: Daniel Lin
 summary:
 draft: 0
-categories: []
-tags: []
+categories: ['程式設計']
+tags: ['Nginx', '反向代理', 'Web Server']
 showToc: true # 顯示目錄區塊
 TocOpen: true # 展開目錄
 ShowReadingTime: true # 閱讀時間

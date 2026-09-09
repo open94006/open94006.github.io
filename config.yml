@@ -49,7 +49,7 @@ params:
         Title: Daniel Lin 林致嘉
         imageUrl: '/headshot.jpg'
         Content: |
-            這裡是我生活與工作紀錄的地方  
+            這裡是我紀錄生活、工作、學習心得的地方  
             把這顆種子埋下，希望能長大茁壯😎
     socialIcons: # optional
         - name: 'github'
