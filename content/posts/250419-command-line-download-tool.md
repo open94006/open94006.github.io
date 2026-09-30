@@ -84,7 +84,7 @@ ShowBreadCrumbs: true # 導覽路徑
 
 - 安裝軟體： 透過 `brew install <package_name>` 安裝指定的軟體。
 - 更新軟體： 透過 `brew update` 更新 Homebrew 本身，透過 `brew upgrade` 更新已安裝的軟體。
-- 卸載軟體： 透過 `brew uninstall <package_name>` 卸載指定的軟體。
+- 移除軟體： 透過 `brew uninstall <package_name>` 移除指定的軟體。
 - 搜尋軟體： 透過 `brew search <keyword>` 搜尋可用的軟體套件。
 - 管理依賴： 自動處理軟體之間的依賴關係。
 
@@ -100,4 +100,4 @@ ShowBreadCrumbs: true # 導覽路徑
 
 - `zsh` 是你的命令列環境，是你輸入和執行其他命令的地方。
 - `wget` 和 `curl` 是專門用來在網路上傳輸資料的工具，主要用於下載檔案或與 Web 服務互動。
-- `brew` 是一個軟體管理工具，用來方便地安裝、更新和卸載各種軟體。
+- `brew` 是一個軟體管理工具，用來方便地安裝、更新和移除各種軟體。
