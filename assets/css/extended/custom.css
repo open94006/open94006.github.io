@@ -478,29 +478,23 @@ body.dark .horizon {
     border-bottom: 1px solid var(--border);
 }
 
-/* Post Content Images */
+/* Post Content Images: cap at 600px, never wider than the column */
 .post-content img {
-    max-width: 600px;
-    width: auto; /* Maintain aspect ratio */
-    height: auto;
-    object-fit: contain;
-}
-
-/* Specific fix: if height attribute is present in HTML, respect it */
-.post-content img[height] {
-    height: attr(height px) !important; /* Fallback for browsers that don't support attr() in property values */
-}
-
-/* Since attr() is not well supported, we use a different approach:
-   If there's a height attribute, we DON'T set height: auto in CSS */
-.post-content img {
-    max-width: 600px;
+    max-width: min(600px, 100%);
     width: auto;
     object-fit: contain;
 }
 
+/* No ?h= given: keep natural aspect ratio. With ?h=, the height attribute applies. */
 .post-content img:not([height]) {
     height: auto;
+}
+
+/* Narrow screens: drop the ?h= height so a wide image shrinks to the column width instead of overflowing */
+@media screen and (max-width: 768px) {
+    .post-content img[height] {
+        height: auto;
+    }
 }
 
 /* Code Blocks */
