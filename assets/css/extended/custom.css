@@ -128,14 +128,14 @@
 @supports selector(.main:has(.post-single > .toc)) {
     @media screen and (min-width: 1150px) {
         .main:has(.post-single > .toc) {
-            max-width: 1200px;
+            max-width: 1560px;
         }
 
         .post-single:has(> .toc) {
             display: grid;
-            grid-template-columns: 720px 240px;
-            justify-content: center;
-            column-gap: 56px;
+            /* 文章置中，目錄放右側欄；左欄留白與右欄等寬以維持置中 */
+            grid-template-columns: minmax(200px, 1fr) minmax(0, 860px) minmax(200px, 1fr);
+            column-gap: 48px;
             align-items: start;
             max-width: none;
             margin-left: 0;
@@ -146,9 +146,10 @@
             position: sticky;
             top: 92px;
             left: auto;
-            grid-column: 2;
+            grid-column: 3;
             grid-row: 2;
             width: 100%;
+            max-width: 260px;
             max-height: calc(100vh - 120px);
             overflow-y: auto;
             margin: 0;
@@ -183,13 +184,13 @@
         }
 
         .post-single:has(> .toc) > *:not(.toc) {
-            grid-column: 1;
+            grid-column: 2;
             min-width: 0;
         }
 
         /* Header spans full width above both TOC and content */
         .post-single:has(> .toc) > .post-header {
-            grid-column: 1 / -1;
+            grid-column: 2;
             grid-row: 1;
             text-align: center;
         }
